@@ -12,16 +12,19 @@
 #    pass
 
 
-from app.example import enlarge
+#from app.example import enlarge
 
-def test_enlarge():
+#def test_enlarge():
     #assert True
     #assert False
     #assert 2 == 2
-    assert enlarge(9) == 900
+    #assert enlarge(9) == 900
 
 # EXPECT THAT THE ENLARGE FUNCTION RETURNS A LARGER NUMBER
 
 # EXPECT THAT WE GET A ROUNDED STRING BACK WITH DOLLAR SIGN
 
-#
+from app.example import to_usd
+
+def test_to_usd():
+    assert to_usd(9) == "$9.00"
